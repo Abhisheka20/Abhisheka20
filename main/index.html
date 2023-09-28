@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CARTRipple</title>
+        <link rel="stylesheet" href="index.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="../images/cartripple.ico" type="image/png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <!-- Navigation Bar -->
+       <header id="section1">
+          <div class="navbar">
+            <div class="logoback"></div>
+            <img class="logo" onclick="logo()" src="../images/cartripple.ico" alt="">
+            <ul class="butn">
+               <li><a href="#section1" data-section="section1">Home</a></li>
+               <li><a href="#section2" data-section="section2">Categories</a></li>
+               <li><a href="#section3" data-section="section3">About</a></li>
+               <li><a href="#section4" data-section="section4">Contact</a></li>
+            </ul>
+            <a href="login.html"><i class='bx bxs-user-circle'></i></a>
+         </div>
+     </header>
+     <header id="section1mobile" class="section1mobile">
+      <div class="logoback"></div>
+      <img class="logo" onclick="logo()" src="../images/cartripple.ico" alt="">
+      <div class="barback"></div>
+      <div class="barbtns">
+        <i id="bar" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+      </div>
+      <div class="dropdown">
+        <li><a href="#section1mobile" data-section="section1">Home</a></li>
+        <li><a href="#section2" data-section="section2">Categories</a></li>
+        <li><a href="#section3" data-section="section3">About</a></li>
+        <li><a href="#section4" data-section="section4">Contact</a></li>
+        <li><a href="login.html"><i class='bx bxs-user-circle'></i></a></li>
+      </div>
+    </header>
+    <script src="home.js"></script>
+    
+      <!-- Main area in home page  -->
+        <div class="main-area">
+               <img class="graph-5" id="graph" src="../images/graph.png">
+               <h1 class="name" id="cartripple">CARTRipple</h1>
+               <h2 class="sentence" id="sentence">"Discover endless shopping possibilities at your <br>fingertips, where style meets convenience, <br>and savings never go out of season."</h2>
+               <img src="../images/onlineshopping2.png" class="shoppingimg" id="frontimg">
+            
+           <!-- Floting Animation     -->
+            <div class="circles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <section id="section2" class="cat">
+         <div class="container">
+
+           <h2 class="title"> Categories </h2>
+       
+            <div class="products-container">
+            
+              <div class="product" data-name="p-1" onclick="btn1()">
+                 <img  src="../images/1.png" alt="">
+                 <h3>Technology Accessories</h3>
+                 <div class="price"></div>
+              </div>
+             
+              <div class="product" data-name="p-2" onclick="btn2()">
+                 <img src="../images/2.png" alt="">
+                 <h3>Household Items</h3>
+                 <div class="price"></div>
+              </div>
+       
+                <div class="product" data-name="p-3" onclick="btn3()">
+                   <img src="../images/3.png" alt="">
+                   <h3>Office Equipment</h3>
+                  <div class="price"></div>
+               </div>
+       
+              <div class="product" data-name="p-4" onclick="btn4()">
+                  <img src="../images/4.png" alt="">
+                  <h3>Clothing</h3>
+                 <div class="price"></div>
+              </div>
+       
+                <div class="product" data-name="p-5" onclick="btn5()">
+                   <img src="../images/5.png" alt="">
+                   <h3>Cosmetics and Body Care</h3>
+                   <div class="price"></div>
+                </div>
+       
+              <div class="product" data-name="p-6" onclick="btn6()">
+                 <img src="../images/6.png" alt="">
+                 <h3>Furniture and Decor</h3>
+                 <div class="price"></div>
+                </div>
+             </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <div id="section3" class="about">
+         <h2>About</h2>
+         <div class="ab">
+            <img src="../images/team.png" alt="" class="team">
+            <h3>
+               "At CartRipple, we're your trusted destination for all your shopping needs. With a passion for delivering quality products and a seamless online shopping experience, we aim to make your life more convenient and enjoyable. Our diverse selection of items, from everyday essentials to unique finds, reflects our commitment to offering you a wide variety of options. We understand that every purchase matters, which is why we prioritize top-notch customer service and satisfaction. At Cart Ripple, we're not just an online store; we're your partner in finding the best deals and discovering the latest trends. Join us on this shopping journey, and let's create ripples of joy, one cart at a time."<br><br>
+            </h3>
+         </div>
+      </div>
+
+      <!-- Contact Section  -->
+        <div id="section4" class="Contact">
+            <h2>Contact Us</h2>
+               <div class="cont">
+                  <h3> Give your Feedback ,</h3>
+                     <h2 class="icons">
+                        <i class='bx bxl-gmail' id="ic" onclick="gmail()"></i>
+                        <i class='bx bxl-whatsapp' id="ic" onclick="whats()" ></i>
+                        <i class='bx bxl-facebook-circle' id="ic" onclick="fb()"></i>
+                        <i class='bx bxl-instagram' id="ic" onclick="insta()"></i>
+                     </h2>
+                     <img src="../images/contact.png" >
+               </div>
+            <h5 >© 2023.Abhisheka Deshapriya.all rights reserved</h5>
+         </div>
+        
+    </body>
+</html>

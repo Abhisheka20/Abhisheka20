@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" href="../images/cartripple.ico" type="image/png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header id="section1">
+            <div class="navbar">
+              <div class="logoback"></div>
+              <img class="logo" onclick="logo()" src="../images/cartripple.ico" alt="">
+              <ul class="butn">
+                 <li><a href="index.html#section1" data-section="section1">Home</a></li>
+                 <li><a href="index.html#section2" data-section="section2">Categories</a></li>
+                 <li><a href="index.html#section3" data-section="section3">About</a></li>
+                 <li><a href="index.html#section4" data-section="section4">Contact</a></li>
+              </ul>
+           </div>
+       </header>
+       <header id="section1mobile" class="section1mobile">
+        <div class="logoback"></div>
+        <img class="logo" onclick="logo()" src="../images/cartripple.ico" alt="">
+        <div class="barback"></div>
+        <div class="barbtns">
+          <i id="bar" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+        <div class="dropdown">
+          <li><a href="#section1mobile" data-section="section1">Home</a></li>
+          <li><a href="#section2" data-section="section2">Categories</a></li>
+          <li><a href="#section3" data-section="section3">About</a></li>
+          <li><a href="#section4" data-section="section4">Contact</a></li>
+          <li><a href="login.html"><i class='bx bxs-user-circle'></i></a></li>
+        </div>
+      </header>
+      <!-- Main area in login page  -->
+      <script src="home.js"></script>
+        <div class="main-area">
+            <!-- Floting Animation     -->
+            <div class="circles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="hero">
+
+                <div class="form-box">
+                    <div class="form-value">
+                     <form action="">
+                            <h2>Login</h2>
+                            <div class="inputbox">
+                              <ion-icon name="mail-outline"></ion-icon>
+                               <input type="email" required>
+                              <label for="">Email</label>
+                          </div>
+                           <div class="inputbox">
+                                 <ion-icon name="lock-closed-outline"></ion-icon>
+                                 <input type="password" required>
+                             <label for="">Password</label>
+                          </div>
+                          <div class="forget">
+                             <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                            
+                          </div>
+                            <button>Log in</button>
+                           <div class="register">
+                               <p>Don't have a account <a href="#">Register</a></p>
+                           </div>
+                    </form>
+               </div>
+            </div>
+    
+    </body>
+</html>
